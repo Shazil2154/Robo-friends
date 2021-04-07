@@ -4,6 +4,7 @@ import Cardlist from '../components/Cardlist';
 //import robots from './robots.js' using api instead of this local file
 import Scroll from '../components/Scroll'
 import SearchBox from '../components/SearchBox';
+import ErrorBoundary from '../components/ErrorBoundary'
 class App extends Component {
 	constructor(){
 		super();
@@ -32,7 +33,9 @@ class App extends Component {
 				<h1 className='f1'>Robo Friends</h1>
 				<SearchBox searchChange={this.onSearchChange} />
 				<Scroll>
-					<Cardlist robots={filteredRobots} />
+					<ErrorBoundary>
+						<Cardlist robots={filteredRobots} />
+					</ErrorBoundary>
 				</Scroll>
 			</div>
 			)
