@@ -1,3 +1,6 @@
+## IMPORTANT NOtICE:
+# THE MASTER BRANCH CONTAINS THE COMPLETED AND ORGANIZED CODE IF YOU WANT TO USE IT SELECT MASTER INSTEAD OF MAIN
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
